@@ -1,0 +1,38 @@
+<div class="card mt-3">
+  <div class="card-header">
+    <div class="float-left">
+      <h4>Cursos</h4>
+    </div>
+  </div>
+  <div class="card-body">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Setor</th>
+          <th>Alterar</th>
+          <th>Excluir</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let setor of setores">
+          <td>{{ setor.idSetor }}</td>
+          <td>{{ setor.nome }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!--<ng-template #loading>
+        <span>Carregando Cursos...</span>
+      </ng-template>
+  
+      ng-template #loadingError>
+        <div *ngIf="error$ | async; else loading" >
+          Erro ao carregar cursos. Tente novamente mais tarde.
+        </div>
+        <ng-template #loading>
+            <span>Carregando Cursos...</span>
+        </ng-template>
+      </ng-template -->
+  </div>
+</div>

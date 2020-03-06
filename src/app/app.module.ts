@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -10,12 +11,13 @@ import { SetorModule } from './setor/setor.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SetorModule
+    SetorModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
